@@ -13,17 +13,17 @@
 </head>
 
 <body>
-    <!-- <h1> = location <h2>= number <h3>= stop <h4>= arriving/frequency <h5>= search <h6> = time-->
+    <!-- <h1> = location <h2> = number <h3> = stop <h4>= arriving/frequency <h5> = search <h6> = time-->
     <nav>
-        <div class="status bar">
+        <div class="status-bar">
             <ul>
-                <li class="icon-left">
+                <li class="status-left">
                     <h6>12:30pm</h6>
                 </li>
-                <!--<li class="icon-middle"></li> -->
-                <li class="icon-right">
+                <!--<li class="status-middle"></li> -->
+                <li class="status-right">
                     <span class="wifi">  <i class="material-icons" role="network-wifi"> network_wifi</i>
-                  <!-- <i class="fas fa-signal" role="data signal"></i>--></span>
+                  </span>
                     <span class="battery">
                         <i class="material-icons" role="cell-signal">signal_cellular_alt</i></span>
                     <span class="battery" role="battery"><i class="material-icons">battery_std</i></span>
@@ -31,25 +31,21 @@
             </ul>
         </div>
         <div class="search-bar">
-            <ul>
-                <li class="icon-left">
-                    <span class="arrow-left"><i class="material-icons" role="arrow">arrow_back</i></span>
-                </li>
-                <li class="icon-middle">
-                    <span class="search-icon"><i class="material-icons" role="search icon">search</i></span>
-                    <h5>Search</h5>
-                    <span class="microphone"><i class="material-icons">
-mic
-</i></span>
-                </li>
-                <li class="icon-right"></li>
-            </ul>
+            <div class="back-arrow">
+                <i class="material-icons" role="arrow">arrow_back</i>
+            </div>
+            <div class="search">
+                <div class="search-icon"><i class="material-icons" role="search icon">search</i></div>
+                <input type="text" placeholder="Search" />
+                <div class="microphone"><i class="material-icons">mic</i></div>
+            </div>
         </div>
     </nav>
     <section class="location">
         <h1>Washington &amp; State</h1>
     </section>
     <section class="schedule">
+        <div class="in-service">
         <ul class="eastbound">
             <li class="individual-route">
                 <ul>
@@ -134,8 +130,6 @@ mic
             <li class="individual-route">
                 <ul>
                     <li class="left">
-
-
                         <h2 class="number">6x</h2>
                     </li>
                     <li class="middle">
@@ -149,6 +143,7 @@ mic
                 </ul>
             </li>
         </ul>
+        </div>    
         <ul class="out-of-service">
             <li class="individual-route">
                 <ul>
@@ -212,3 +207,4 @@ mic
 </body>
 
 </html>
+# busybus-front-end-challenge
